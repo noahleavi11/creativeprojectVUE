@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: row;
     align-content: space-between;
+    justify-content: center !important;
+}
+.nav-fill {
+    justify-content: center !important;
 }
 .buttons {
     display:block;
@@ -45,17 +49,36 @@
 .epic {
     background-color: #BD3FFA;
 }
+.epic:hover {
+  background-color: #BD3FFA !important;
+}
 .mythic {
     background-color: #DCA01E;
+}
+.mythic:hover {
+  background-color: #DCA01E !important;
 }
 .rare {
     background-color: #1258A2;
 }
+.rare:hover {
+  background-color: #1258A2 !important;
+}
 .legendary {
     background-color: #FF7605;
 }
+.legendary:hover {
+  background-color: #FF7605 !important;
+}
 .marvel {
     background-color: #B22222;
+}
+.marvel:hover {
+  background-color: #B22222 !important;
+}
+
+.all:hover {
+  background-color: #23d160 !important;
 }
 
 @media screen and (max-width: 40em) {

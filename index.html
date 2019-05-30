@@ -10,31 +10,31 @@
   <body>
   <section class="section">
     <div class="container">
-      <h1>
-        Fortnite Items
-      </h1>
+      <nav class="navbar navbar-light bg-light">
+          <span class="navbar-brand mb-0 h1">Fortnite Item Database</span>
+      </nav>
       <div id="app">
           <nav class="nav nav-pills nav-fill">
             <form class="form-inline">
                 <div class="buttons">
-                    <button @click="showRare()" type="button" class="btn btn-primary">Rare Items</button>
+                    <button @click="showRare()" type="button" class="btn btn-primary rare">Rare Items</button>
                 </div>
                 <div class="buttons">
-                    <button @click="showEpic()" type="button" class="btn btn-primary">Epic Items</button>
+                    <button @click="showEpic()" type="button" class="btn btn-primary epic">Epic Items</button>
                 </div>
                 <div class="buttons">
-                    <button @click="showLegendary()" type="button" class="btn btn-primary">Legendary Items</button>
+                    <button @click="showLegendary()" type="button" class="btn btn-primary legendary">Legendary Items</button>
 
                 </div>
                 <div class="buttons">
-                    <button @click="showMythic()" type="button" class="btn btn-primary">Mythic Items</button>
+                    <button @click="showMythic()" type="button" class="btn btn-primary mythic">Mythic Items</button>
            
                 </div>
                 <div class="buttons">
-                    <button @click="showMarvel()" type="button" class="btn btn-primary">Marvel Items</button>
+                    <button @click="showMarvel()" type="button" class="btn btn-primary marvel">Marvel Items</button>
                 </div>
                 <div class="buttons">
-                    <button @click="showTranscendant()" type="button" class="btn btn-primary">All Items</button>
+                    <button @click="showTranscendant()" type="button" class="btn btn-primary all">All Items</button>
                 </div>
   
             </form>
@@ -57,7 +57,6 @@
           <div v-else>
             <div></div>
           </div>
-  
       </div>
     </div>
   </section>

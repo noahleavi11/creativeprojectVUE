@@ -1,0 +1,76 @@
+.form-inline {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+.buttons {
+    display:block;
+    margin: 5px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+.list-item {
+    display: flex; 
+    padding: 0.5em;
+    width: 100%;
+    margin: 0;
+    
+}
+.list-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #23d160;
+    padding: 1em;
+    width: 160px;
+    height: 256px;
+ }
+ .list-content p {
+   flex: 1 0 auto;
+ }
+
+ .title {
+    text-align: center;
+    font-style: oblique;
+    color: #fff;
+
+ }
+ .subtitle {
+    font-weight: 100;
+ }
+
+.epic {
+    background-color: #BD3FFA;
+}
+.mythic {
+    background-color: #DCA01E;
+}
+.rare {
+    background-color: #1258A2;
+}
+.legendary {
+    background-color: #FF7605;
+}
+.marvel {
+    background-color: #B22222;
+}
+
+@media screen and (max-width: 40em) {
+    .list-item {
+      /* width: 50% !important; */
+    }
+  }
+@media screen and (max-width: 60em) {
+    .list-item {
+      /* width: 33.33% !important; */
+    }
+  }
+@media screen and (max-width: 20em) {
+    .list-item {
+      width: 100% !important;
+    }
+}
+  

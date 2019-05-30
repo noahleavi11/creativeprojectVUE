@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fortnite Items</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1>
+        Fortnite Items
+      </h1>
+      <div id="app">
+          <nav class="nav nav-pills nav-fill">
+            <form class="form-inline">
+                <div class="buttons">
+                    <button @click="showRare()" type="button" class="btn btn-primary">Rare Items</button>
+                </div>
+                <div class="buttons">
+                    <button @click="showEpic()" type="button" class="btn btn-primary">Epic Items</button>
+                </div>
+                <div class="buttons">
+                    <button @click="showLegendary()" type="button" class="btn btn-primary">Legendary Items</button>
+
+                </div>
+                <div class="buttons">
+                    <button @click="showMythic()" type="button" class="btn btn-primary">Mythic Items</button>
+           
+                </div>
+                <div class="buttons">
+                    <button @click="showMarvel()" type="button" class="btn btn-primary">Marvel Items</button>
+                </div>
+                <div class="buttons">
+                    <button @click="showTranscendant()" type="button" class="btn btn-primary">All Items</button>
+                </div>
+  
+            </form>
+          </nav>  
+        <div v-if="current_items">
+            <ul class="list">
+                  <div v-for="object in filteredItems">
+                      <li class="list-item">
+                        <div class="list-content" v-bind:class="show">
+                            <p class="title">{{object.item.name}}</p>
+                            <p class="subtitle">{{object.item.type}}</p>
+                            <figure class="image is-128x128">
+                              <img v-bind:src="object.item.images.icon" height="128" width="128">
+                            </figure>
+                        </div>
+                      </li>
+                  </div>
+                </ul>
+          </div>
+          <div v-else>
+            <div></div>
+          </div>
+  
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
